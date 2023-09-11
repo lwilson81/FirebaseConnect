@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#DD3437"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="237dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/lastname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Enter Contact"
+        android:textColor="#63B0A6"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#527F5E"
+        android:text="Add Contact"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="238dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/phonenumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="158dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
